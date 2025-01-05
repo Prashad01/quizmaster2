@@ -193,29 +193,23 @@ p {
 }
 
 @media (max-width: 768px) {
-   header {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 10px 20px;
-  }
+    .site-header {
+        flex-direction: column;
+        text-align: center;
+        padding: 1em;
+    }
 
-  .logo {
-    font-size: 20px;
-    margin-bottom: 10px;
-  }
+    .site-identity h1 {
+        font-size: 1.6em;
+    }
 
-  nav {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
+    .site-navigation li {
+        margin: 0.5em 0;
+    }
 
-  nav .btn {
-    width: 100%;
-    text-align: center;
-    margin: 5px 0;
-  }
-}
+    .site-navigation a {
+        font-size: 1.2em;
+    }
 
     .poster {
         padding: 20px 0;
@@ -240,15 +234,17 @@ p {
 }
 
 @media (max-width: 480px) {
-  .logo {
-    font-size: 18px;
-  }
+    .site-header {
+        padding: 0.5em;
+    }
 
-  nav .btn {
-    padding: 6px 12px;
-    font-size: 14px;
-  }
-}
+    .site-identity h1 {
+        font-size: 1.4em;
+    }
+
+    .site-navigation a {
+        font-size: 1em;
+    }
 
     .poster {
         padding: 15px 0;

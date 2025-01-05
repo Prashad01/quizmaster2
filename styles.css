@@ -193,23 +193,29 @@ p {
 }
 
 @media (max-width: 768px) {
-    .site-header {
-        flex-direction: column;
-        text-align: center;
-        padding: 1em;
-    }
+   header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 20px;
+  }
 
-    .site-identity h1 {
-        font-size: 1.6em;
-    }
+  .logo {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
 
-    .site-navigation li {
-        margin: 0.5em 0;
-    }
+  nav {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
 
-    .site-navigation a {
-        font-size: 1.2em;
-    }
+  nav .btn {
+    width: 100%;
+    text-align: center;
+    margin: 5px 0;
+  }
+}
 
     .poster {
         padding: 20px 0;
@@ -234,17 +240,15 @@ p {
 }
 
 @media (max-width: 480px) {
-    .site-header {
-        padding: 0.5em;
-    }
+  .logo {
+    font-size: 18px;
+  }
 
-    .site-identity h1 {
-        font-size: 1.4em;
-    }
-
-    .site-navigation a {
-        font-size: 1em;
-    }
+  nav .btn {
+    padding: 6px 12px;
+    font-size: 14px;
+  }
+}
 
     .poster {
         padding: 15px 0;

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Master</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+
+        /* General styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Header */
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 20px 40px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .highlight {
+    color: #007bff;
+  }
+  
+  nav .btn {
+    background-color: transparent;
+    border: 1px solid #007bff;
+    color: #007bff;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  
+  nav .btn:hover {
+    background-color: #007bff;
+    color: #ffffff;
+  }
+
+  .banner{
+  text-align: center;
+  padding: 40px 20px;
+  background: linear-gradient(to bottom, #e9f5ff, #f4f9fc);
+  background-color: #007bff;
+}
+
+
+/* Main content */
+main {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.about-section {
+  background-color: white;
+  padding: 20px;
+  margin: auto;
+  max-width: 800px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.about-section h1 {
+  color: #007bff;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.about-section p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+
+.about-section ul {
+  text-align: left;
+  margin: 20px auto;
+  max-width: 600px;
+}
+
+
+.footer {
+    background-color: #ecf0f1;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 75px;
+    border-top: 1px solid #ddd;
+  }
+  
+  .footer-content p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .footer-content a {
+    text-decoration: none;
+    color: #007BFF;
+    margin: 0 5px;
+  }
+  
+  .footer-content a:hover {
+    text-decoration: underline;
+  }
+  
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">QUIZ <span class="highlight">MASTER</span></div>
+        <nav>
+          <button class="btn" id="homeBtn">Home</button>
+          <button class="btn" id="aboutBtn">About</button>
+        </nav>
+      </header>
+      
+      <main class="banner">
+        <section class="about-section" >
+          <h1>About Us</h1>
+          <p>
+            Welcome to <strong>QuizMaster.com</strong>, your trusted companion in mastering competitive exams. We understand the hurdles faced by aspirants preparing for government and competitive exams, and we're here to empower you with the tools and confidence you need to excel.Our platform offers an extensive range of mock tests thoughtfully designed to replicate the structure and environment of real exams. These tests provide a practical and realistic practice experience, helping you develop the skills and strategies essential for success.At <strong>QuizMaster</strong>, we firmly believe that consistent practice leads to excellence. That’s why our tests are crafted by subject matter experts who meticulously analyze exam patterns and syllabi. This ensures that you receive preparation materials that are not only comprehensive but also up-to-date with the latest requirements. Whether you want to assess your strengths or work on improving specific areas, our tailored mock tests are designed to guide you every step of the way. We are dedicated to making high-quality content accessible and affordable for all learners. With QuizMaster.com, exam preparation is no longer a challenge but an engaging and rewarding journey. Join us today and experience the transformative power of focused and effective preparation. Thank you for choosing QuizMaster.com, let’s turn your aspirations into achievements!
+          </p>
+          
+          <p>Join us today and take a step toward your success!</p>
+        </section>
+
+      </main>
+
+
+      <footer class="footer">
+        <div class="footer-content">
+          <p>&copy; 2025 Quiz Master. All rights reserved.</p>
+          <p>
+            <a href="#privacy-policy">Privacy Policy</a> | 
+            <a href="#terms-of-service">Terms of Service</a> | 
+            <a href="#contact">Contact Us</a>
+          </p>
+        </div>
+      </footer>
+      
+      <script>
+        // Add event listeners to buttons for navigation
+        document.getElementById("homeBtn").addEventListener("click", () => {
+          window.location.href = "index.html"; // Redirect to Home Page
+        });
+        
+        document.getElementById("aboutBtn").addEventListener("click", () => {
+          window.location.href = "about.html"; // Redirect to About Page
+        });
+
+        </script>
+</body>
+</html>
